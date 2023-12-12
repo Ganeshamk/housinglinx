@@ -1,0 +1,87 @@
+.houselinx {
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.houselinx-img {
+  background: #7197e8;
+  height: 100%;
+  min-height: 80vh;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.terms-condition {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: -webkit-fill-available;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+@media (min-width: 769px) {
+  .houselinx-img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .houselinx-img {
+    display: none;
+  }
+}
+
+.tabs-link {
+  font-size: 20px !important;
+}
+
+.submit-button {
+  font-size: 16px !important;
+  color: #fff !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.register-icon-formfield {
+  .form-control {
+    padding-left: 40px !important;
+  }
+
+  .form-label {
+    padding-left: 30px !important;
+  }
+}
+
+.password-block {
+  position: relative;
+}
+
+.mat-icon {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.login-page-img {
+  background-image: url("./..//../public/beautiful-city-chongqing\ 11.04.07\ PM.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}

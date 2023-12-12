@@ -1,0 +1,80 @@
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 3rem;
+  border-top: 1px solid #ffffff;
+  background: #6f00ff;
+  z-index: 9999;
+  width: 100%;
+  color: #ffffff;
+  gap: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.app-name {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.app-name-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0px 0px 0.5rem;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+}
+
+.link-name {
+  margin-left: 16px;
+}
+
+.navbar-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999;
+  width: 100%;
+}
+
+.action-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.action-block > span {
+  padding: 0px 1rem;
+  font-size: 1.5rem;
+  color: rgb(166, 166, 166);
+}
+
+.nav-links {
+  overflow: auto;
+  min-height: calc(100% - 120px);
+  max-height: calc(100% - 120px);
+  display: block;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.avatar > img {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+}

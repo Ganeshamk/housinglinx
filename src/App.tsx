@@ -1,26 +1,102 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import { useState } from "react";
+import Management from "./pages/Management";
+import Payment from "./pages/Payment";
+import Profile from "./pages/Profile";
+import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublicRoute";
+import "./App.css";
+import Visitor from "./pages/Visitor";
+import * as am4core from "@amcharts/amcharts4/core";
+import * as am4charts from "@amcharts/amcharts4/charts";
+import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
-function App() {
+am4core.useTheme(am4themes_animated);
+const App: React.FunctionComponent = () => {
+  const isLoggedIn = localStorage.getItem("user") ? true : false;
+  const [login, setLogin] = useState(isLoggedIn);
+
+  const onHandleLogin = () => {
+    setLogin(true);
+  };
+
+  const onHandleLogOut = () => {
+    setLogin(false);
+    localStorage.clear();
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        {login === true ? <Sidebar onHandleLogOut={onHandleLogOut} /> : ""}
+        <div className={login === true ? "layout" : ""}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <PrivateRoute>
+                  <Home />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/dashboard"
+              element={
+                <PrivateRoute>
+                  <Home />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/visitor"
+              element={
+                <PrivateRoute>
+                  <Visitor />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/management"
+              element={
+                <PrivateRoute>
+                  <Management />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/payment"
+              element={
+                <PrivateRoute>
+                  <Payment />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <PrivateRoute>
+                  <Profile />
+                </PrivateRoute>
+              }
+            />
+
+            <Route
+              path="/login"
+              element={
+                <PublicRoute>
+                  <Login onHandleLogin={onHandleLogin} />
+                </PublicRoute>
+              }
+            />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
