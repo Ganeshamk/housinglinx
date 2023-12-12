@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/housinglinx/static/css/main.aa311ff5.css",
-    "main.js": "/housinglinx/static/js/main.1cd8146e.js",
-    "pdfmake.js": "/housinglinx/static/js/pdfmake.aed0d180.chunk.js",
-    "canvg.js": "/housinglinx/static/js/canvg.a05b1e31.chunk.js",
-    "xlsx.js": "/housinglinx/static/js/xlsx.d3391476.chunk.js",
-    "static/js/787.ca8fee09.chunk.js": "/housinglinx/static/js/787.ca8fee09.chunk.js",
+    "main.js": "/housinglinx/static/js/main.4b255ca9.js",
+    "pdfmake.js": "/housinglinx/static/js/pdfmake.e7b35ac0.chunk.js",
+    "canvg.js": "/housinglinx/static/js/canvg.4b31db6a.chunk.js",
+    "xlsx.js": "/housinglinx/static/js/xlsx.663d8135.chunk.js",
+    "static/js/787.ed5423fe.chunk.js": "/housinglinx/static/js/787.ed5423fe.chunk.js",
     "static/media/beautiful-city-chongqing 11.04.07 PM.png": "/housinglinx/static/media/beautiful-city-chongqing 11.04.07 PM.fdd496d395612afb631a.png",
     "static/media/avatar.jpg": "/housinglinx/static/media/avatar.dd75d7c9226af7564584.jpg",
     "static/media/houselinx.png": "/housinglinx/static/media/houselinx.798a444c33dcba789b2b.png",
@@ -19,14 +19,14 @@
     "static/media/fa-v4compatibility.woff2": "/housinglinx/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/housinglinx/index.html",
     "main.aa311ff5.css.map": "/housinglinx/static/css/main.aa311ff5.css.map",
-    "main.1cd8146e.js.map": "/housinglinx/static/js/main.1cd8146e.js.map",
-    "pdfmake.aed0d180.chunk.js.map": "/housinglinx/static/js/pdfmake.aed0d180.chunk.js.map",
-    "canvg.a05b1e31.chunk.js.map": "/housinglinx/static/js/canvg.a05b1e31.chunk.js.map",
-    "xlsx.d3391476.chunk.js.map": "/housinglinx/static/js/xlsx.d3391476.chunk.js.map",
-    "787.ca8fee09.chunk.js.map": "/housinglinx/static/js/787.ca8fee09.chunk.js.map"
+    "main.4b255ca9.js.map": "/housinglinx/static/js/main.4b255ca9.js.map",
+    "pdfmake.e7b35ac0.chunk.js.map": "/housinglinx/static/js/pdfmake.e7b35ac0.chunk.js.map",
+    "canvg.4b31db6a.chunk.js.map": "/housinglinx/static/js/canvg.4b31db6a.chunk.js.map",
+    "xlsx.663d8135.chunk.js.map": "/housinglinx/static/js/xlsx.663d8135.chunk.js.map",
+    "787.ed5423fe.chunk.js.map": "/housinglinx/static/js/787.ed5423fe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa311ff5.css",
-    "static/js/main.1cd8146e.js"
+    "static/js/main.4b255ca9.js"
   ]
 }
